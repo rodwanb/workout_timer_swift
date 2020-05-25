@@ -1,14 +1,14 @@
 //
-//  WorkoutTimerTests.swift
-//  WorkoutTimerTests
+//  DomainTests.swift
+//  DomainTests
 //
 //  Created by Rodwan on 2020/05/22.
 //
 
 import XCTest
-@testable import WorkoutTimer
+@testable import Domain
 
-class WorkoutTimerTests: XCTestCase {
+class DomainTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

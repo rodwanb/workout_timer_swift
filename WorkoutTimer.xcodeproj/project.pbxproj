@@ -3,138 +3,684 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD5D8E6F2478053C00E78EB9 /* WorkoutTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5D8E652478053B00E78EB9 /* WorkoutTimer.framework */; };
-		CD5D8E742478053C00E78EB9 /* WorkoutTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8E732478053C00E78EB9 /* WorkoutTimerTests.swift */; };
-		CD5D8E762478053C00E78EB9 /* WorkoutTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5D8E682478053B00E78EB9 /* WorkoutTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A7B969C7C7383942792C9F7 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534F6B1260D31007A2FFC8EB /* Pods_Domain.framework */; };
+		3D1C6A499031AD62CDC534EC /* Pods_Domain_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFF7F55A2D0AE25F80BD9A9 /* Pods_Domain_DomainTests.framework */; };
+		6F85319832CC46A5FD9350FC /* Pods_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD73CC0AC777E944B943F4C /* Pods_Application.framework */; };
+		AD6ECA8647835CBEBC0C1577 /* Pods_WorkoutTimer_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB73FEEA31C634ACA2C9D38B /* Pods_WorkoutTimer_iOS.framework */; };
+		C63D4305CBC90F6AA7AFBDF9 /* Pods_Application_ApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8E3660707E41445B09C02 /* Pods_Application_ApplicationTests.framework */; };
+		CD5D8E8D2478063400E78EB9 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5D8E842478063400E78EB9 /* Domain.framework */; };
+		CD5D8E922478063400E78EB9 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8E912478063400E78EB9 /* DomainTests.swift */; };
+		CD5D8E942478063400E78EB9 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5D8E862478063400E78EB9 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5D8EA92478066D00E78EB9 /* Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5D8EA02478066C00E78EB9 /* Application.framework */; };
+		CD5D8EAE2478066D00E78EB9 /* ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EAD2478066D00E78EB9 /* ApplicationTests.swift */; };
+		CD5D8EB02478066D00E78EB9 /* Application.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5D8EA22478066C00E78EB9 /* Application.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD5D8EC224780A6500E78EB9 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EC124780A6500E78EB9 /* Todo.swift */; };
+		CD5D8EC524780AEF00E78EB9 /* TodoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EC424780AEF00E78EB9 /* TodoStatus.swift */; };
+		CD5D8EC724780CD400E78EB9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EC624780CD400E78EB9 /* Store.swift */; };
+		CD5D8ECB24780D3800E78EB9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8ECA24780D3800E78EB9 /* Action.swift */; };
+		CD5D8ECE24780D7500E78EB9 /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8ECD24780D7500E78EB9 /* ApplicationState.swift */; };
+		CD5D8ED124780E6E00E78EB9 /* ApplicationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8ED024780E6E00E78EB9 /* ApplicationReducer.swift */; };
+		CD5D8ED624780F3B00E78EB9 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5D8E842478063400E78EB9 /* Domain.framework */; };
+		CD5D8ED724780F3B00E78EB9 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD5D8E842478063400E78EB9 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD5D8EE82478153700E78EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EE72478153700E78EB9 /* AppDelegate.swift */; };
+		CD5D8EEA2478153700E78EB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EE92478153700E78EB9 /* SceneDelegate.swift */; };
+		CD5D8EEE2478153900E78EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5D8EED2478153900E78EB9 /* Assets.xcassets */; };
+		CD5D8EF12478153900E78EB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5D8EF02478153900E78EB9 /* Preview Assets.xcassets */; };
+		CD5D8EF42478153900E78EB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5D8EF22478153900E78EB9 /* LaunchScreen.storyboard */; };
+		CD5D8EF92478158300E78EB9 /* Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5D8EA02478066C00E78EB9 /* Application.framework */; };
+		CD5D8EFA2478158300E78EB9 /* Application.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD5D8EA02478066C00E78EB9 /* Application.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD5D8F00247816D500E78EB9 /* LoggerMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EFF247816D500E78EB9 /* LoggerMiddleware.swift */; };
+		CD5D8F08247AB01500E78EB9 /* SessionTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F07247AB01500E78EB9 /* SessionTimer.swift */; };
+		CD5D8F0C247AB12D00E78EB9 /* SessionTimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F0B247AB12D00E78EB9 /* SessionTimerState.swift */; };
+		CD5D8F0F247AB28400E78EB9 /* SelectSessionTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F0E247AB28400E78EB9 /* SelectSessionTimerAction.swift */; };
+		CD5D8F12247AB2DD00E78EB9 /* SessionTimerSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F11247AB2DD00E78EB9 /* SessionTimerSelector.swift */; };
+		CD5D8F14247AB47800E78EB9 /* AddSessionTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F13247AB47800E78EB9 /* AddSessionTimerAction.swift */; };
+		CD5D8F17247AB4CE00E78EB9 /* SessionTimerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F16247AB4CE00E78EB9 /* SessionTimerReducer.swift */; };
+		CD5D8F1A247AB66000E78EB9 /* SessionTimerMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F19247AB66000E78EB9 /* SessionTimerMiddleware.swift */; };
+		CD5D8F1F247B167B00E78EB9 /* StartTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F1E247B167B00E78EB9 /* StartTimerAction.swift */; };
+		CD5D8F21247B16AE00E78EB9 /* StopTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F20247B16AE00E78EB9 /* StopTimerAction.swift */; };
+		CD5D8F26247B324100E78EB9 /* TimerMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F25247B324100E78EB9 /* TimerMiddleware.swift */; };
+		CD5D8F28247BB30700E78EB9 /* TimerTickAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F27247BB30700E78EB9 /* TimerTickAction.swift */; };
+		CD5D8F2B247BE7AD00E78EB9 /* WorkoutSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F2A247BE7AD00E78EB9 /* WorkoutSessionView.swift */; };
+		CD5D8F2D247BE80000E78EB9 /* WorkoutSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F2C247BE80000E78EB9 /* WorkoutSessionViewModel.swift */; };
+		CD5D8F30247BF35E00E78EB9 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F2F247BF35E00E78EB9 /* BaseViewModel.swift */; };
+		CD5D8F34247C345900E78EB9 /* RestartSessionTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F33247C345900E78EB9 /* RestartSessionTimerAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CD5D8E702478053C00E78EB9 /* PBXContainerItemProxy */ = {
+		CD5D8E8E2478063400E78EB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD5D8E5C2478053B00E78EB9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CD5D8E642478053B00E78EB9;
-			remoteInfo = WorkoutTimer;
+			remoteGlobalIDString = CD5D8E832478063400E78EB9;
+			remoteInfo = Domain;
+		};
+		CD5D8EAA2478066D00E78EB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD5D8E5C2478053B00E78EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5D8E9F2478066C00E78EB9;
+			remoteInfo = Application;
+		};
+		CD5D8ED824780F3B00E78EB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD5D8E5C2478053B00E78EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5D8E832478063400E78EB9;
+			remoteInfo = Domain;
+		};
+		CD5D8EFB2478158300E78EB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD5D8E5C2478053B00E78EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5D8E9F2478066C00E78EB9;
+			remoteInfo = Application;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD5D8EDA24780F3B00E78EB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD5D8ED724780F3B00E78EB9 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8EFD2478158300E78EB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD5D8EFA2478158300E78EB9 /* Application.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		CD5D8E652478053B00E78EB9 /* WorkoutTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorkoutTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD5D8E682478053B00E78EB9 /* WorkoutTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkoutTimer.h; sourceTree = "<group>"; };
-		CD5D8E692478053B00E78EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD5D8E6E2478053C00E78EB9 /* WorkoutTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD5D8E732478053C00E78EB9 /* WorkoutTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimerTests.swift; sourceTree = "<group>"; };
-		CD5D8E752478053C00E78EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A130E6C4041A0906EFF0C8 /* Pods-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.release.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.release.xcconfig"; sourceTree = "<group>"; };
+		09D47A59B02D7C4DF6EB6971 /* Pods-WorkoutTimer iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutTimer iOS.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutTimer iOS/Pods-WorkoutTimer iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0AE8E3660707E41445B09C02 /* Pods_Application_ApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application_ApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B8DA8DB5127AD35719CDF98 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
+		13A3718E403E5CA9699FAD88 /* Pods-Domain-DomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.release.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.release.xcconfig"; sourceTree = "<group>"; };
+		2556EB0B2C3444E4DB646720 /* Pods-WorkoutTimer-WorkoutTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutTimer-WorkoutTimerTests.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutTimer-WorkoutTimerTests/Pods-WorkoutTimer-WorkoutTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25A84B06FD977461C5BB6993 /* Pods-WorkoutTimer-WorkoutTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutTimer-WorkoutTimerTests.release.xcconfig"; path = "Target Support Files/Pods-WorkoutTimer-WorkoutTimerTests/Pods-WorkoutTimer-WorkoutTimerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3886B5C37DF05B1FA85641FE /* Pods_WorkoutTimer_WorkoutTimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutTimer_WorkoutTimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D80BADF10F3727EDEE55F2 /* Pods-WorkoutTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutTimer.release.xcconfig"; path = "Target Support Files/Pods-WorkoutTimer/Pods-WorkoutTimer.release.xcconfig"; sourceTree = "<group>"; };
+		3C31F303DB026806C4385CA0 /* Pods-Domain-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
+		534F6B1260D31007A2FFC8EB /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B25FE5F88677DF910397965 /* Pods_WorkoutTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD73CC0AC777E944B943F4C /* Pods_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63992954BBE368376E158626 /* Pods-Application-ApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application-ApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-Application-ApplicationTests/Pods-Application-ApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B40E2147FFD4BD6C468822E /* Pods-WorkoutTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutTimer.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutTimer/Pods-WorkoutTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		BB73FEEA31C634ACA2C9D38B /* Pods_WorkoutTimer_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkoutTimer_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5D8E842478063400E78EB9 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5D8E862478063400E78EB9 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		CD5D8E872478063400E78EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5D8E8C2478063400E78EB9 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5D8E912478063400E78EB9 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		CD5D8E932478063400E78EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5D8EA02478066C00E78EB9 /* Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5D8EA22478066C00E78EB9 /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		CD5D8EA32478066C00E78EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5D8EA82478066D00E78EB9 /* ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5D8EAD2478066D00E78EB9 /* ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTests.swift; sourceTree = "<group>"; };
+		CD5D8EAF2478066D00E78EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5D8EC124780A6500E78EB9 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		CD5D8EC424780AEF00E78EB9 /* TodoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStatus.swift; sourceTree = "<group>"; };
+		CD5D8EC624780CD400E78EB9 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		CD5D8ECA24780D3800E78EB9 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		CD5D8ECD24780D7500E78EB9 /* ApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
+		CD5D8ED024780E6E00E78EB9 /* ApplicationReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationReducer.swift; sourceTree = "<group>"; };
+		CD5D8EE52478153700E78EB9 /* WorkoutTimer iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WorkoutTimer iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5D8EE72478153700E78EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD5D8EE92478153700E78EB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD5D8EED2478153900E78EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD5D8EF02478153900E78EB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD5D8EF32478153900E78EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD5D8EF52478153900E78EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5D8EFF247816D500E78EB9 /* LoggerMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerMiddleware.swift; sourceTree = "<group>"; };
+		CD5D8F07247AB01500E78EB9 /* SessionTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimer.swift; sourceTree = "<group>"; };
+		CD5D8F0B247AB12D00E78EB9 /* SessionTimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerState.swift; sourceTree = "<group>"; };
+		CD5D8F0E247AB28400E78EB9 /* SelectSessionTimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSessionTimerAction.swift; sourceTree = "<group>"; };
+		CD5D8F11247AB2DD00E78EB9 /* SessionTimerSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerSelector.swift; sourceTree = "<group>"; };
+		CD5D8F13247AB47800E78EB9 /* AddSessionTimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionTimerAction.swift; sourceTree = "<group>"; };
+		CD5D8F16247AB4CE00E78EB9 /* SessionTimerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerReducer.swift; sourceTree = "<group>"; };
+		CD5D8F19247AB66000E78EB9 /* SessionTimerMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerMiddleware.swift; sourceTree = "<group>"; };
+		CD5D8F1E247B167B00E78EB9 /* StartTimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTimerAction.swift; sourceTree = "<group>"; };
+		CD5D8F20247B16AE00E78EB9 /* StopTimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopTimerAction.swift; sourceTree = "<group>"; };
+		CD5D8F25247B324100E78EB9 /* TimerMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMiddleware.swift; sourceTree = "<group>"; };
+		CD5D8F27247BB30700E78EB9 /* TimerTickAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTickAction.swift; sourceTree = "<group>"; };
+		CD5D8F2A247BE7AD00E78EB9 /* WorkoutSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSessionView.swift; sourceTree = "<group>"; };
+		CD5D8F2C247BE80000E78EB9 /* WorkoutSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSessionViewModel.swift; sourceTree = "<group>"; };
+		CD5D8F2F247BF35E00E78EB9 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		CD5D8F33247C345900E78EB9 /* RestartSessionTimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartSessionTimerAction.swift; sourceTree = "<group>"; };
+		DCFF7F55A2D0AE25F80BD9A9 /* Pods_Domain_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E13D5D5F7DE140D3E734C3FB /* Pods-WorkoutTimer iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutTimer iOS.release.xcconfig"; path = "Target Support Files/Pods-WorkoutTimer iOS/Pods-WorkoutTimer iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E7378889517A33CE0919A1BB /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
+		E86E6D75978659F1B659DD56 /* Pods-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.debug.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.debug.xcconfig"; sourceTree = "<group>"; };
+		F942BA7133B3435F1CF84B1E /* Pods-Application-ApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application-ApplicationTests.release.xcconfig"; path = "Target Support Files/Pods-Application-ApplicationTests/Pods-Application-ApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CD5D8E622478053B00E78EB9 /* Frameworks */ = {
+		CD5D8E812478063400E78EB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7B969C7C7383942792C9F7 /* Pods_Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD5D8E6B2478053C00E78EB9 /* Frameworks */ = {
+		CD5D8E892478063400E78EB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5D8E6F2478053C00E78EB9 /* WorkoutTimer.framework in Frameworks */,
+				CD5D8E8D2478063400E78EB9 /* Domain.framework in Frameworks */,
+				3D1C6A499031AD62CDC534EC /* Pods_Domain_DomainTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8E9D2478066C00E78EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5D8ED624780F3B00E78EB9 /* Domain.framework in Frameworks */,
+				6F85319832CC46A5FD9350FC /* Pods_Application.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8EA52478066D00E78EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5D8EA92478066D00E78EB9 /* Application.framework in Frameworks */,
+				C63D4305CBC90F6AA7AFBDF9 /* Pods_Application_ApplicationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8EE22478153700E78EB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5D8EF92478158300E78EB9 /* Application.framework in Frameworks */,
+				AD6ECA8647835CBEBC0C1577 /* Pods_WorkoutTimer_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		167705D1987D8824BAB391F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B40E2147FFD4BD6C468822E /* Pods-WorkoutTimer.debug.xcconfig */,
+				39D80BADF10F3727EDEE55F2 /* Pods-WorkoutTimer.release.xcconfig */,
+				2556EB0B2C3444E4DB646720 /* Pods-WorkoutTimer-WorkoutTimerTests.debug.xcconfig */,
+				25A84B06FD977461C5BB6993 /* Pods-WorkoutTimer-WorkoutTimerTests.release.xcconfig */,
+				E86E6D75978659F1B659DD56 /* Pods-Application.debug.xcconfig */,
+				04A130E6C4041A0906EFF0C8 /* Pods-Application.release.xcconfig */,
+				63992954BBE368376E158626 /* Pods-Application-ApplicationTests.debug.xcconfig */,
+				F942BA7133B3435F1CF84B1E /* Pods-Application-ApplicationTests.release.xcconfig */,
+				0B8DA8DB5127AD35719CDF98 /* Pods-Domain.debug.xcconfig */,
+				E7378889517A33CE0919A1BB /* Pods-Domain.release.xcconfig */,
+				3C31F303DB026806C4385CA0 /* Pods-Domain-DomainTests.debug.xcconfig */,
+				13A3718E403E5CA9699FAD88 /* Pods-Domain-DomainTests.release.xcconfig */,
+				09D47A59B02D7C4DF6EB6971 /* Pods-WorkoutTimer iOS.debug.xcconfig */,
+				E13D5D5F7DE140D3E734C3FB /* Pods-WorkoutTimer iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E3D30AFD7F231E49B92F7A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B25FE5F88677DF910397965 /* Pods_WorkoutTimer.framework */,
+				3886B5C37DF05B1FA85641FE /* Pods_WorkoutTimer_WorkoutTimerTests.framework */,
+				5FD73CC0AC777E944B943F4C /* Pods_Application.framework */,
+				0AE8E3660707E41445B09C02 /* Pods_Application_ApplicationTests.framework */,
+				534F6B1260D31007A2FFC8EB /* Pods_Domain.framework */,
+				DCFF7F55A2D0AE25F80BD9A9 /* Pods_Domain_DomainTests.framework */,
+				BB73FEEA31C634ACA2C9D38B /* Pods_WorkoutTimer_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD5D8E5B2478053B00E78EB9 = {
 			isa = PBXGroup;
 			children = (
-				CD5D8E672478053B00E78EB9 /* WorkoutTimer */,
-				CD5D8E722478053C00E78EB9 /* WorkoutTimerTests */,
+				CD5D8EBD2478083B00E78EB9 /* Presentation */,
+				CD5D8EBC2478083400E78EB9 /* Infrastructure */,
+				CD5D8EB9247806CD00E78EB9 /* Core */,
+				9E3D30AFD7F231E49B92F7A7 /* Frameworks */,
+				167705D1987D8824BAB391F1 /* Pods */,
 				CD5D8E662478053B00E78EB9 /* Products */,
+				CD5D8EBA247806EC00E78EB9 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
 		CD5D8E662478053B00E78EB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD5D8E652478053B00E78EB9 /* WorkoutTimer.framework */,
-				CD5D8E6E2478053C00E78EB9 /* WorkoutTimerTests.xctest */,
+				CD5D8E842478063400E78EB9 /* Domain.framework */,
+				CD5D8E8C2478063400E78EB9 /* DomainTests.xctest */,
+				CD5D8EA02478066C00E78EB9 /* Application.framework */,
+				CD5D8EA82478066D00E78EB9 /* ApplicationTests.xctest */,
+				CD5D8EE52478153700E78EB9 /* WorkoutTimer iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CD5D8E672478053B00E78EB9 /* WorkoutTimer */ = {
+		CD5D8E852478063400E78EB9 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				CD5D8E682478053B00E78EB9 /* WorkoutTimer.h */,
-				CD5D8E692478053B00E78EB9 /* Info.plist */,
+				CD5D8EC324780AD600E78EB9 /* Types */,
+				CD5D8EC024780A1700E78EB9 /* Entities */,
+				CD5D8E862478063400E78EB9 /* Domain.h */,
+				CD5D8E872478063400E78EB9 /* Info.plist */,
 			);
-			path = WorkoutTimer;
+			path = Domain;
 			sourceTree = "<group>";
 		};
-		CD5D8E722478053C00E78EB9 /* WorkoutTimerTests */ = {
+		CD5D8E902478063400E78EB9 /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD5D8E732478053C00E78EB9 /* WorkoutTimerTests.swift */,
-				CD5D8E752478053C00E78EB9 /* Info.plist */,
+				CD5D8E912478063400E78EB9 /* DomainTests.swift */,
+				CD5D8E932478063400E78EB9 /* Info.plist */,
 			);
-			path = WorkoutTimerTests;
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		CD5D8EA12478066C00E78EB9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F1B247B15DA00E78EB9 /* Timer */,
+				CD5D8F09247AB10600E78EB9 /* SessionTimer */,
+				CD5D8EC824780D0B00E78EB9 /* Common */,
+				CD5D8EC624780CD400E78EB9 /* Store.swift */,
+				CD5D8EA22478066C00E78EB9 /* Application.h */,
+				CD5D8EA32478066C00E78EB9 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CD5D8EAC2478066D00E78EB9 /* ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8EAD2478066D00E78EB9 /* ApplicationTests.swift */,
+				CD5D8EAF2478066D00E78EB9 /* Info.plist */,
+			);
+			path = ApplicationTests;
+			sourceTree = "<group>";
+		};
+		CD5D8EB9247806CD00E78EB9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8EA12478066C00E78EB9 /* Application */,
+				CD5D8E852478063400E78EB9 /* Domain */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CD5D8EBA247806EC00E78EB9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8EBF2478086400E78EB9 /* Infrastructure */,
+				CD5D8EBE2478085D00E78EB9 /* Presentation */,
+				CD5D8EBB247806F300E78EB9 /* Core */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CD5D8EBB247806F300E78EB9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8E902478063400E78EB9 /* DomainTests */,
+				CD5D8EAC2478066D00E78EB9 /* ApplicationTests */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CD5D8EBC2478083400E78EB9 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CD5D8EBD2478083B00E78EB9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8EE62478153700E78EB9 /* WorkoutTimer iOS */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CD5D8EBE2478085D00E78EB9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CD5D8EBF2478086400E78EB9 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CD5D8EC024780A1700E78EB9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8EC124780A6500E78EB9 /* Todo.swift */,
+				CD5D8F07247AB01500E78EB9 /* SessionTimer.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CD5D8EC324780AD600E78EB9 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8EC424780AEF00E78EB9 /* TodoStatus.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		CD5D8EC824780D0B00E78EB9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8EFE247816BF00E78EB9 /* Middleware */,
+				CD5D8ECF24780E5A00E78EB9 /* Reducers */,
+				CD5D8ECC24780D6200E78EB9 /* States */,
+				CD5D8EC924780D2600E78EB9 /* Actions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CD5D8EC924780D2600E78EB9 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8ECA24780D3800E78EB9 /* Action.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		CD5D8ECC24780D6200E78EB9 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8ECD24780D7500E78EB9 /* ApplicationState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		CD5D8ECF24780E5A00E78EB9 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8ED024780E6E00E78EB9 /* ApplicationReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		CD5D8EE62478153700E78EB9 /* WorkoutTimer iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F2E247BF32D00E78EB9 /* Common */,
+				CD5D8F29247BE79300E78EB9 /* WorkoutSession */,
+				CD5D8EE72478153700E78EB9 /* AppDelegate.swift */,
+				CD5D8EE92478153700E78EB9 /* SceneDelegate.swift */,
+				CD5D8EED2478153900E78EB9 /* Assets.xcassets */,
+				CD5D8EF22478153900E78EB9 /* LaunchScreen.storyboard */,
+				CD5D8EF52478153900E78EB9 /* Info.plist */,
+				CD5D8EEF2478153900E78EB9 /* Preview Content */,
+			);
+			path = "WorkoutTimer iOS";
+			sourceTree = "<group>";
+		};
+		CD5D8EEF2478153900E78EB9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8EF02478153900E78EB9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD5D8EFE247816BF00E78EB9 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8EFF247816D500E78EB9 /* LoggerMiddleware.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		CD5D8F09247AB10600E78EB9 /* SessionTimer */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F18247AB64E00E78EB9 /* Middleware */,
+				CD5D8F15247AB4BF00E78EB9 /* Reducer */,
+				CD5D8F10247AB2CF00E78EB9 /* Selectors */,
+				CD5D8F0D247AB23D00E78EB9 /* Actions */,
+				CD5D8F0A247AB11500E78EB9 /* States */,
+			);
+			path = SessionTimer;
+			sourceTree = "<group>";
+		};
+		CD5D8F0A247AB11500E78EB9 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F0B247AB12D00E78EB9 /* SessionTimerState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		CD5D8F0D247AB23D00E78EB9 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F33247C345900E78EB9 /* RestartSessionTimerAction.swift */,
+				CD5D8F0E247AB28400E78EB9 /* SelectSessionTimerAction.swift */,
+				CD5D8F13247AB47800E78EB9 /* AddSessionTimerAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		CD5D8F10247AB2CF00E78EB9 /* Selectors */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F11247AB2DD00E78EB9 /* SessionTimerSelector.swift */,
+			);
+			path = Selectors;
+			sourceTree = "<group>";
+		};
+		CD5D8F15247AB4BF00E78EB9 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F16247AB4CE00E78EB9 /* SessionTimerReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CD5D8F18247AB64E00E78EB9 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F19247AB66000E78EB9 /* SessionTimerMiddleware.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		CD5D8F1B247B15DA00E78EB9 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F1D247B15EF00E78EB9 /* Actions */,
+				CD5D8F1C247B15E500E78EB9 /* Middleware */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		CD5D8F1C247B15E500E78EB9 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F25247B324100E78EB9 /* TimerMiddleware.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		CD5D8F1D247B15EF00E78EB9 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F1E247B167B00E78EB9 /* StartTimerAction.swift */,
+				CD5D8F20247B16AE00E78EB9 /* StopTimerAction.swift */,
+				CD5D8F27247BB30700E78EB9 /* TimerTickAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		CD5D8F29247BE79300E78EB9 /* WorkoutSession */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F2A247BE7AD00E78EB9 /* WorkoutSessionView.swift */,
+				CD5D8F2C247BE80000E78EB9 /* WorkoutSessionViewModel.swift */,
+			);
+			path = WorkoutSession;
+			sourceTree = "<group>";
+		};
+		CD5D8F2E247BF32D00E78EB9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CD5D8F2F247BF35E00E78EB9 /* BaseViewModel.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		CD5D8E602478053B00E78EB9 /* Headers */ = {
+		CD5D8E7F2478063400E78EB9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5D8E762478053C00E78EB9 /* WorkoutTimer.h in Headers */,
+				CD5D8E942478063400E78EB9 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8E9B2478066C00E78EB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5D8EB02478066D00E78EB9 /* Application.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CD5D8E642478053B00E78EB9 /* WorkoutTimer */ = {
+		CD5D8E832478063400E78EB9 /* Domain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD5D8E792478053C00E78EB9 /* Build configuration list for PBXNativeTarget "WorkoutTimer" */;
+			buildConfigurationList = CD5D8E992478063400E78EB9 /* Build configuration list for PBXNativeTarget "Domain" */;
 			buildPhases = (
-				CD5D8E602478053B00E78EB9 /* Headers */,
-				CD5D8E612478053B00E78EB9 /* Sources */,
-				CD5D8E622478053B00E78EB9 /* Frameworks */,
-				CD5D8E632478053B00E78EB9 /* Resources */,
+				8969D91BD9CC201456C876CF /* [CP] Check Pods Manifest.lock */,
+				CD5D8E7F2478063400E78EB9 /* Headers */,
+				CD5D8E802478063400E78EB9 /* Sources */,
+				CD5D8E812478063400E78EB9 /* Frameworks */,
+				CD5D8E822478063400E78EB9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WorkoutTimer;
-			productName = WorkoutTimer;
-			productReference = CD5D8E652478053B00E78EB9 /* WorkoutTimer.framework */;
+			name = Domain;
+			productName = Domain;
+			productReference = CD5D8E842478063400E78EB9 /* Domain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CD5D8E6D2478053C00E78EB9 /* WorkoutTimerTests */ = {
+		CD5D8E8B2478063400E78EB9 /* DomainTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD5D8E7C2478053C00E78EB9 /* Build configuration list for PBXNativeTarget "WorkoutTimerTests" */;
+			buildConfigurationList = CD5D8E9A2478063400E78EB9 /* Build configuration list for PBXNativeTarget "DomainTests" */;
 			buildPhases = (
-				CD5D8E6A2478053C00E78EB9 /* Sources */,
-				CD5D8E6B2478053C00E78EB9 /* Frameworks */,
-				CD5D8E6C2478053C00E78EB9 /* Resources */,
+				65997128CB521C80C8B13E5F /* [CP] Check Pods Manifest.lock */,
+				CD5D8E882478063400E78EB9 /* Sources */,
+				CD5D8E892478063400E78EB9 /* Frameworks */,
+				CD5D8E8A2478063400E78EB9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CD5D8E712478053C00E78EB9 /* PBXTargetDependency */,
+				CD5D8E8F2478063400E78EB9 /* PBXTargetDependency */,
 			);
-			name = WorkoutTimerTests;
-			productName = WorkoutTimerTests;
-			productReference = CD5D8E6E2478053C00E78EB9 /* WorkoutTimerTests.xctest */;
+			name = DomainTests;
+			productName = DomainTests;
+			productReference = CD5D8E8C2478063400E78EB9 /* DomainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD5D8E9F2478066C00E78EB9 /* Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5D8EB12478066D00E78EB9 /* Build configuration list for PBXNativeTarget "Application" */;
+			buildPhases = (
+				E6F68687ACFDEBF286F7D39A /* [CP] Check Pods Manifest.lock */,
+				CD5D8E9B2478066C00E78EB9 /* Headers */,
+				CD5D8E9C2478066C00E78EB9 /* Sources */,
+				CD5D8E9D2478066C00E78EB9 /* Frameworks */,
+				CD5D8E9E2478066C00E78EB9 /* Resources */,
+				CD5D8EDA24780F3B00E78EB9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD5D8ED924780F3B00E78EB9 /* PBXTargetDependency */,
+			);
+			name = Application;
+			productName = Application;
+			productReference = CD5D8EA02478066C00E78EB9 /* Application.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD5D8EA72478066D00E78EB9 /* ApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5D8EB42478066D00E78EB9 /* Build configuration list for PBXNativeTarget "ApplicationTests" */;
+			buildPhases = (
+				D73C9901C43C7EAC31BCCB32 /* [CP] Check Pods Manifest.lock */,
+				CD5D8EA42478066D00E78EB9 /* Sources */,
+				CD5D8EA52478066D00E78EB9 /* Frameworks */,
+				CD5D8EA62478066D00E78EB9 /* Resources */,
+				211AC4356E33C61C59D409D7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD5D8EAB2478066D00E78EB9 /* PBXTargetDependency */,
+			);
+			name = ApplicationTests;
+			productName = ApplicationTests;
+			productReference = CD5D8EA82478066D00E78EB9 /* ApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD5D8EE42478153700E78EB9 /* WorkoutTimer iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5D8EF62478153900E78EB9 /* Build configuration list for PBXNativeTarget "WorkoutTimer iOS" */;
+			buildPhases = (
+				25940157B02A1FB3554F074E /* [CP] Check Pods Manifest.lock */,
+				CD5D8EE12478153700E78EB9 /* Sources */,
+				CD5D8EE22478153700E78EB9 /* Frameworks */,
+				CD5D8EE32478153700E78EB9 /* Resources */,
+				CD5D8EFD2478158300E78EB9 /* Embed Frameworks */,
+				1AD442D0F6FB3C3DCD484E61 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD5D8EFC2478158300E78EB9 /* PBXTargetDependency */,
+			);
+			name = "WorkoutTimer iOS";
+			productName = "WorkoutTimer iOS";
+			productReference = CD5D8EE52478153700E78EB9 /* WorkoutTimer iOS.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -145,10 +691,21 @@
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				TargetAttributes = {
-					CD5D8E642478053B00E78EB9 = {
+					CD5D8E832478063400E78EB9 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					CD5D8E8B2478063400E78EB9 = {
 						CreatedOnToolsVersion = 11.5;
 					};
-					CD5D8E6D2478053C00E78EB9 = {
+					CD5D8E9F2478066C00E78EB9 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					CD5D8EA72478066D00E78EB9 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					CD5D8EE42478153700E78EB9 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -166,54 +723,300 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD5D8E642478053B00E78EB9 /* WorkoutTimer */,
-				CD5D8E6D2478053C00E78EB9 /* WorkoutTimerTests */,
+				CD5D8E832478063400E78EB9 /* Domain */,
+				CD5D8E8B2478063400E78EB9 /* DomainTests */,
+				CD5D8E9F2478066C00E78EB9 /* Application */,
+				CD5D8EA72478066D00E78EB9 /* ApplicationTests */,
+				CD5D8EE42478153700E78EB9 /* WorkoutTimer iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CD5D8E632478053B00E78EB9 /* Resources */ = {
+		CD5D8E822478063400E78EB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD5D8E6C2478053C00E78EB9 /* Resources */ = {
+		CD5D8E8A2478063400E78EB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8E9E2478066C00E78EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8EA62478066D00E78EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8EE32478153700E78EB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5D8EF42478153900E78EB9 /* LaunchScreen.storyboard in Resources */,
+				CD5D8EF12478153900E78EB9 /* Preview Assets.xcassets in Resources */,
+				CD5D8EEE2478153900E78EB9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		CD5D8E612478053B00E78EB9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		1AD442D0F6FB3C3DCD484E61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorkoutTimer iOS/Pods-WorkoutTimer iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorkoutTimer iOS/Pods-WorkoutTimer iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorkoutTimer iOS/Pods-WorkoutTimer iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		CD5D8E6A2478053C00E78EB9 /* Sources */ = {
+		211AC4356E33C61C59D409D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Application-ApplicationTests/Pods-Application-ApplicationTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Application-ApplicationTests/Pods-Application-ApplicationTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Application-ApplicationTests/Pods-Application-ApplicationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25940157B02A1FB3554F074E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorkoutTimer iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65997128CB521C80C8B13E5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Domain-DomainTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8969D91BD9CC201456C876CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Domain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73C9901C43C7EAC31BCCB32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Application-ApplicationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6F68687ACFDEBF286F7D39A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Application-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD5D8E802478063400E78EB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5D8E742478053C00E78EB9 /* WorkoutTimerTests.swift in Sources */,
+				CD5D8EC224780A6500E78EB9 /* Todo.swift in Sources */,
+				CD5D8F08247AB01500E78EB9 /* SessionTimer.swift in Sources */,
+				CD5D8EC524780AEF00E78EB9 /* TodoStatus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8E882478063400E78EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5D8E922478063400E78EB9 /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8E9C2478066C00E78EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5D8F0C247AB12D00E78EB9 /* SessionTimerState.swift in Sources */,
+				CD5D8ECE24780D7500E78EB9 /* ApplicationState.swift in Sources */,
+				CD5D8F17247AB4CE00E78EB9 /* SessionTimerReducer.swift in Sources */,
+				CD5D8ED124780E6E00E78EB9 /* ApplicationReducer.swift in Sources */,
+				CD5D8EC724780CD400E78EB9 /* Store.swift in Sources */,
+				CD5D8F12247AB2DD00E78EB9 /* SessionTimerSelector.swift in Sources */,
+				CD5D8F21247B16AE00E78EB9 /* StopTimerAction.swift in Sources */,
+				CD5D8F34247C345900E78EB9 /* RestartSessionTimerAction.swift in Sources */,
+				CD5D8ECB24780D3800E78EB9 /* Action.swift in Sources */,
+				CD5D8F0F247AB28400E78EB9 /* SelectSessionTimerAction.swift in Sources */,
+				CD5D8F28247BB30700E78EB9 /* TimerTickAction.swift in Sources */,
+				CD5D8F14247AB47800E78EB9 /* AddSessionTimerAction.swift in Sources */,
+				CD5D8F26247B324100E78EB9 /* TimerMiddleware.swift in Sources */,
+				CD5D8F00247816D500E78EB9 /* LoggerMiddleware.swift in Sources */,
+				CD5D8F1F247B167B00E78EB9 /* StartTimerAction.swift in Sources */,
+				CD5D8F1A247AB66000E78EB9 /* SessionTimerMiddleware.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8EA42478066D00E78EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5D8EAE2478066D00E78EB9 /* ApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5D8EE12478153700E78EB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5D8EE82478153700E78EB9 /* AppDelegate.swift in Sources */,
+				CD5D8EEA2478153700E78EB9 /* SceneDelegate.swift in Sources */,
+				CD5D8F30247BF35E00E78EB9 /* BaseViewModel.swift in Sources */,
+				CD5D8F2D247BE80000E78EB9 /* WorkoutSessionViewModel.swift in Sources */,
+				CD5D8F2B247BE7AD00E78EB9 /* WorkoutSessionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CD5D8E712478053C00E78EB9 /* PBXTargetDependency */ = {
+		CD5D8E8F2478063400E78EB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD5D8E642478053B00E78EB9 /* WorkoutTimer */;
-			targetProxy = CD5D8E702478053C00E78EB9 /* PBXContainerItemProxy */;
+			target = CD5D8E832478063400E78EB9 /* Domain */;
+			targetProxy = CD5D8E8E2478063400E78EB9 /* PBXContainerItemProxy */;
+		};
+		CD5D8EAB2478066D00E78EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD5D8E9F2478066C00E78EB9 /* Application */;
+			targetProxy = CD5D8EAA2478066D00E78EB9 /* PBXContainerItemProxy */;
+		};
+		CD5D8ED924780F3B00E78EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD5D8E832478063400E78EB9 /* Domain */;
+			targetProxy = CD5D8ED824780F3B00E78EB9 /* PBXContainerItemProxy */;
+		};
+		CD5D8EFC2478158300E78EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD5D8E9F2478066C00E78EB9 /* Application */;
+			targetProxy = CD5D8EFB2478158300E78EB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD5D8EF22478153900E78EB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5D8EF32478153900E78EB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CD5D8E772478053C00E78EB9 /* Debug */ = {
@@ -336,45 +1139,50 @@
 			};
 			name = Release;
 		};
-		CD5D8E7A2478053C00E78EB9 /* Debug */ = {
+		CD5D8E952478063400E78EB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8DA8DB5127AD35719CDF98 /* Pods-Domain.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WorkoutTimer/Info.plist;
+				INFOPLIST_FILE = Core/Domain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.WorkoutTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CD5D8E7B2478053C00E78EB9 /* Release */ = {
+		CD5D8E962478063400E78EB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7378889517A33CE0919A1BB /* Pods-Domain.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WorkoutTimer/Info.plist;
+				INFOPLIST_FILE = Core/Domain/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.WorkoutTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -382,34 +1190,169 @@
 			};
 			name = Release;
 		};
-		CD5D8E7D2478053C00E78EB9 /* Debug */ = {
+		CD5D8E972478063400E78EB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C31F303DB026806C4385CA0 /* Pods-Domain-DomainTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WorkoutTimerTests/Info.plist;
+				INFOPLIST_FILE = DomainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.WorkoutTimerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.DomainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CD5D8E7E2478053C00E78EB9 /* Release */ = {
+		CD5D8E982478063400E78EB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A3718E403E5CA9699FAD88 /* Pods-Domain-DomainTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WorkoutTimerTests/Info.plist;
+				INFOPLIST_FILE = DomainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.WorkoutTimerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD5D8EB22478066D00E78EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E86E6D75978659F1B659DD56 /* Pods-Application.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Core/Application/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.Application;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD5D8EB32478066D00E78EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A130E6C4041A0906EFF0C8 /* Pods-Application.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Core/Application/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.Application;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD5D8EB52478066D00E78EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63992954BBE368376E158626 /* Pods-Application-ApplicationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.ApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD5D8EB62478066D00E78EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F942BA7133B3435F1CF84B1E /* Pods-Application-ApplicationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodwanbarbier.ApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD5D8EF72478153900E78EB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D47A59B02D7C4DF6EB6971 /* Pods-WorkoutTimer iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Presentation/WorkoutTimer iOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Presentation/WorkoutTimer iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodwanbarbier.WorkoutTimer-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD5D8EF82478153900E78EB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E13D5D5F7DE140D3E734C3FB /* Pods-WorkoutTimer iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Presentation/WorkoutTimer iOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Presentation/WorkoutTimer iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodwanbarbier.WorkoutTimer-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,20 +1371,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD5D8E792478053C00E78EB9 /* Build configuration list for PBXNativeTarget "WorkoutTimer" */ = {
+		CD5D8E992478063400E78EB9 /* Build configuration list for PBXNativeTarget "Domain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD5D8E7A2478053C00E78EB9 /* Debug */,
-				CD5D8E7B2478053C00E78EB9 /* Release */,
+				CD5D8E952478063400E78EB9 /* Debug */,
+				CD5D8E962478063400E78EB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD5D8E7C2478053C00E78EB9 /* Build configuration list for PBXNativeTarget "WorkoutTimerTests" */ = {
+		CD5D8E9A2478063400E78EB9 /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD5D8E7D2478053C00E78EB9 /* Debug */,
-				CD5D8E7E2478053C00E78EB9 /* Release */,
+				CD5D8E972478063400E78EB9 /* Debug */,
+				CD5D8E982478063400E78EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5D8EB12478066D00E78EB9 /* Build configuration list for PBXNativeTarget "Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5D8EB22478066D00E78EB9 /* Debug */,
+				CD5D8EB32478066D00E78EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5D8EB42478066D00E78EB9 /* Build configuration list for PBXNativeTarget "ApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5D8EB52478066D00E78EB9 /* Debug */,
+				CD5D8EB62478066D00E78EB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5D8EF62478153900E78EB9 /* Build configuration list for PBXNativeTarget "WorkoutTimer iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5D8EF72478153900E78EB9 /* Debug */,
+				CD5D8EF82478153900E78EB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
