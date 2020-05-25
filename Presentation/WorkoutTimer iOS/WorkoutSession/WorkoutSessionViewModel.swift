@@ -9,6 +9,7 @@ import Foundation
 import Application
 
 protocol WorkoutSessionViewModel: ObservableObject {
+    var sessionName: String { get set }
     var remainingTime: Int { get set }
     func startTimer()
     func stopTimer()
@@ -17,15 +18,23 @@ protocol WorkoutSessionViewModel: ObservableObject {
 
 class DefaultWorkoutSessionViewModel: BaseViewModel, WorkoutSessionViewModel {
     @Published var remainingTime: Int = 0
+    @Published var sessionName: String = ""
     
     init() {
         super.init()
-        dispatch(AddSessionTimerAction(name: "MainTimer", countDown: 20))
-        dispatch(SelectSessionTimerAction(sessionTimer: SessionTimerSelector.sessionTimers(store!.getState()).first!))
+        dispatch(AddSessionTimerAction(
+            name: "MainTimer",
+            steps: [
+                AddSessionTimerStep(name: "countdown", duration: 5)
+            ]))
+        let currentSession = SessionTimerSelector.sessionTimers(store!.getState()).first!
+        dispatch(SelectSessionTimerAction(sessionTimer: currentSession))
+        dispatch(SelectSessionStepAction(sessionStep: currentSession.steps.first!))
     }
     
     override func mapStateToProps(state: ApplicationState) {
-        remainingTime = SessionTimerSelector.currentSessionTimer(state)?.countDown ?? 0
+        remainingTime = SessionTimerSelector.currentSessionStep(state)?.duration ?? 0
+        sessionName = SessionTimerSelector.currentSessionTimer(state)?.name ?? ""
     }
     
     func startTimer() {

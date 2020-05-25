@@ -9,9 +9,9 @@ import Foundation
 import Domain
 
 public struct SelectSessionTimerAction: Action {
-    public let sessionTimer: SessionTimer
+    public let sessionTimer: SessionTimer?
     
-    public init(sessionTimer: SessionTimer) {
+    public init(sessionTimer: SessionTimer?) {
         self.sessionTimer = sessionTimer
     }
 }

@@ -18,7 +18,6 @@
 		CD5D8EA92478066D00E78EB9 /* Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5D8EA02478066C00E78EB9 /* Application.framework */; };
 		CD5D8EAE2478066D00E78EB9 /* ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EAD2478066D00E78EB9 /* ApplicationTests.swift */; };
 		CD5D8EB02478066D00E78EB9 /* Application.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5D8EA22478066C00E78EB9 /* Application.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD5D8EC224780A6500E78EB9 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EC124780A6500E78EB9 /* Todo.swift */; };
 		CD5D8EC524780AEF00E78EB9 /* TodoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EC424780AEF00E78EB9 /* TodoStatus.swift */; };
 		CD5D8EC724780CD400E78EB9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8EC624780CD400E78EB9 /* Store.swift */; };
 		CD5D8ECB24780D3800E78EB9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8ECA24780D3800E78EB9 /* Action.swift */; };
@@ -40,7 +39,7 @@
 		CD5D8F12247AB2DD00E78EB9 /* SessionTimerSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F11247AB2DD00E78EB9 /* SessionTimerSelector.swift */; };
 		CD5D8F14247AB47800E78EB9 /* AddSessionTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F13247AB47800E78EB9 /* AddSessionTimerAction.swift */; };
 		CD5D8F17247AB4CE00E78EB9 /* SessionTimerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F16247AB4CE00E78EB9 /* SessionTimerReducer.swift */; };
-		CD5D8F1A247AB66000E78EB9 /* SessionTimerMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F19247AB66000E78EB9 /* SessionTimerMiddleware.swift */; };
+		CD5D8F1A247AB66000E78EB9 /* SessionTimerTickMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F19247AB66000E78EB9 /* SessionTimerTickMiddleware.swift */; };
 		CD5D8F1F247B167B00E78EB9 /* StartTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F1E247B167B00E78EB9 /* StartTimerAction.swift */; };
 		CD5D8F21247B16AE00E78EB9 /* StopTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F20247B16AE00E78EB9 /* StopTimerAction.swift */; };
 		CD5D8F26247B324100E78EB9 /* TimerMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F25247B324100E78EB9 /* TimerMiddleware.swift */; };
@@ -49,6 +48,9 @@
 		CD5D8F2D247BE80000E78EB9 /* WorkoutSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F2C247BE80000E78EB9 /* WorkoutSessionViewModel.swift */; };
 		CD5D8F30247BF35E00E78EB9 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F2F247BF35E00E78EB9 /* BaseViewModel.swift */; };
 		CD5D8F34247C345900E78EB9 /* RestartSessionTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F33247C345900E78EB9 /* RestartSessionTimerAction.swift */; };
+		CD5D8F36247C4E1200E78EB9 /* RestartSessionSessionMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F35247C4E1200E78EB9 /* RestartSessionSessionMiddleware.swift */; };
+		CD5D8F39247C57DF00E78EB9 /* SessionStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F37247C53DC00E78EB9 /* SessionStep.swift */; };
+		CD5D8F3B247C5DE900E78EB9 /* SelectSessionStepAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5D8F3A247C5DE900E78EB9 /* SelectSessionStepAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,7 +138,6 @@
 		CD5D8EA82478066D00E78EB9 /* ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5D8EAD2478066D00E78EB9 /* ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTests.swift; sourceTree = "<group>"; };
 		CD5D8EAF2478066D00E78EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD5D8EC124780A6500E78EB9 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		CD5D8EC424780AEF00E78EB9 /* TodoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStatus.swift; sourceTree = "<group>"; };
 		CD5D8EC624780CD400E78EB9 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		CD5D8ECA24780D3800E78EB9 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -156,7 +157,7 @@
 		CD5D8F11247AB2DD00E78EB9 /* SessionTimerSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerSelector.swift; sourceTree = "<group>"; };
 		CD5D8F13247AB47800E78EB9 /* AddSessionTimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionTimerAction.swift; sourceTree = "<group>"; };
 		CD5D8F16247AB4CE00E78EB9 /* SessionTimerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerReducer.swift; sourceTree = "<group>"; };
-		CD5D8F19247AB66000E78EB9 /* SessionTimerMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerMiddleware.swift; sourceTree = "<group>"; };
+		CD5D8F19247AB66000E78EB9 /* SessionTimerTickMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimerTickMiddleware.swift; sourceTree = "<group>"; };
 		CD5D8F1E247B167B00E78EB9 /* StartTimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTimerAction.swift; sourceTree = "<group>"; };
 		CD5D8F20247B16AE00E78EB9 /* StopTimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopTimerAction.swift; sourceTree = "<group>"; };
 		CD5D8F25247B324100E78EB9 /* TimerMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMiddleware.swift; sourceTree = "<group>"; };
@@ -165,6 +166,9 @@
 		CD5D8F2C247BE80000E78EB9 /* WorkoutSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSessionViewModel.swift; sourceTree = "<group>"; };
 		CD5D8F2F247BF35E00E78EB9 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		CD5D8F33247C345900E78EB9 /* RestartSessionTimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartSessionTimerAction.swift; sourceTree = "<group>"; };
+		CD5D8F35247C4E1200E78EB9 /* RestartSessionSessionMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartSessionSessionMiddleware.swift; sourceTree = "<group>"; };
+		CD5D8F37247C53DC00E78EB9 /* SessionStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStep.swift; sourceTree = "<group>"; };
+		CD5D8F3A247C5DE900E78EB9 /* SelectSessionStepAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSessionStepAction.swift; sourceTree = "<group>"; };
 		DCFF7F55A2D0AE25F80BD9A9 /* Pods_Domain_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13D5D5F7DE140D3E734C3FB /* Pods-WorkoutTimer iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutTimer iOS.release.xcconfig"; path = "Target Support Files/Pods-WorkoutTimer iOS/Pods-WorkoutTimer iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E7378889517A33CE0919A1BB /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
@@ -382,8 +386,8 @@
 		CD5D8EC024780A1700E78EB9 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				CD5D8EC124780A6500E78EB9 /* Todo.swift */,
 				CD5D8F07247AB01500E78EB9 /* SessionTimer.swift */,
+				CD5D8F37247C53DC00E78EB9 /* SessionStep.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -485,9 +489,10 @@
 		CD5D8F0D247AB23D00E78EB9 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				CD5D8F33247C345900E78EB9 /* RestartSessionTimerAction.swift */,
-				CD5D8F0E247AB28400E78EB9 /* SelectSessionTimerAction.swift */,
 				CD5D8F13247AB47800E78EB9 /* AddSessionTimerAction.swift */,
+				CD5D8F33247C345900E78EB9 /* RestartSessionTimerAction.swift */,
+				CD5D8F3A247C5DE900E78EB9 /* SelectSessionStepAction.swift */,
+				CD5D8F0E247AB28400E78EB9 /* SelectSessionTimerAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -511,7 +516,8 @@
 		CD5D8F18247AB64E00E78EB9 /* Middleware */ = {
 			isa = PBXGroup;
 			children = (
-				CD5D8F19247AB66000E78EB9 /* SessionTimerMiddleware.swift */,
+				CD5D8F19247AB66000E78EB9 /* SessionTimerTickMiddleware.swift */,
+				CD5D8F35247C4E1200E78EB9 /* RestartSessionSessionMiddleware.swift */,
 			);
 			path = Middleware;
 			sourceTree = "<group>";
@@ -925,7 +931,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5D8EC224780A6500E78EB9 /* Todo.swift in Sources */,
+				CD5D8F39247C57DF00E78EB9 /* SessionStep.swift in Sources */,
 				CD5D8F08247AB01500E78EB9 /* SessionTimer.swift in Sources */,
 				CD5D8EC524780AEF00E78EB9 /* TodoStatus.swift in Sources */,
 			);
@@ -947,18 +953,20 @@
 				CD5D8ECE24780D7500E78EB9 /* ApplicationState.swift in Sources */,
 				CD5D8F17247AB4CE00E78EB9 /* SessionTimerReducer.swift in Sources */,
 				CD5D8ED124780E6E00E78EB9 /* ApplicationReducer.swift in Sources */,
+				CD5D8F36247C4E1200E78EB9 /* RestartSessionSessionMiddleware.swift in Sources */,
 				CD5D8EC724780CD400E78EB9 /* Store.swift in Sources */,
 				CD5D8F12247AB2DD00E78EB9 /* SessionTimerSelector.swift in Sources */,
 				CD5D8F21247B16AE00E78EB9 /* StopTimerAction.swift in Sources */,
 				CD5D8F34247C345900E78EB9 /* RestartSessionTimerAction.swift in Sources */,
 				CD5D8ECB24780D3800E78EB9 /* Action.swift in Sources */,
+				CD5D8F3B247C5DE900E78EB9 /* SelectSessionStepAction.swift in Sources */,
 				CD5D8F0F247AB28400E78EB9 /* SelectSessionTimerAction.swift in Sources */,
 				CD5D8F28247BB30700E78EB9 /* TimerTickAction.swift in Sources */,
 				CD5D8F14247AB47800E78EB9 /* AddSessionTimerAction.swift in Sources */,
 				CD5D8F26247B324100E78EB9 /* TimerMiddleware.swift in Sources */,
 				CD5D8F00247816D500E78EB9 /* LoggerMiddleware.swift in Sources */,
 				CD5D8F1F247B167B00E78EB9 /* StartTimerAction.swift in Sources */,
-				CD5D8F1A247AB66000E78EB9 /* SessionTimerMiddleware.swift in Sources */,
+				CD5D8F1A247AB66000E78EB9 /* SessionTimerTickMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

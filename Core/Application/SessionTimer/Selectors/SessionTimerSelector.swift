@@ -23,4 +23,8 @@ public final class SessionTimerSelector {
     public static func currentSessionTimer(_ state: ApplicationState) -> SessionTimer? {
         return state.sessionTimerState.currentSessionTimer
     }
+    
+    public static func currentSessionStep(_ state: ApplicationState) -> SessionStep? {
+        return state.sessionTimerState.currentSessionStep
+    }
 }

@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-public final class SessionTimerMiddleware {
+public final class SessionTimerTickMiddleware {
     
     private let store: Store
     private let disposeBag = DisposeBag()

@@ -13,33 +13,48 @@ final class SessionTimerReducer {
     
     static func reduce(_ state: SessionTimerState, action: Action) -> SessionTimerState {
         return SessionTimerState(
-            sessionTimers: reduce(state.sessionTimers, action: action),
-            currentSessionTimer: reduce(state.currentSessionTimer, action: action))
+            sessionTimers: reduceSessionTimers(state.sessionTimers, action: action),
+            currentSessionTimer: reduceCurrentSessionTimer(state.currentSessionTimer, action: action),
+            currentSessionStep: reduceCurrentStep(state.currentSessionStep, action: action))
     }
     
-    private static func reduce(_ state: [SessionTimer], action: Action) -> [SessionTimer] {
+    private static func reduceSessionTimers(_ state: [SessionTimer], action: Action) -> [SessionTimer] {
         switch action {
         case let addAction as AddSessionTimerAction:
             let newSessionTimer = SessionTimer(
                 id: UUID().uuidString,
                 name: addAction.name,
-                countDown: addAction.countDown)
+                steps: addAction.steps.map({ step in
+                    return SessionStep(
+                        id: UUID().uuidString,
+                        name: step.name,
+                        duration: step.duration)
+                }))
             return state + [newSessionTimer]
         default:
             return state
         }
     }
     
-    private static func reduce(_ state: SessionTimer?, action: Action) -> SessionTimer? {
+    private static func reduceCurrentSessionTimer(_ state: SessionTimer?, action: Action) -> SessionTimer? {
         switch action {
         case let selectAction as SelectSessionTimerAction:
             return selectAction.sessionTimer
+        default:
+            return state
+        }
+    }
+    
+    private static func reduceCurrentStep(_ state: SessionStep?, action: Action) -> SessionStep? {
+        switch action {
+        case let selectAction as SelectSessionStepAction:
+            return selectAction.sessionStep
         case is TimerTickAction:
             guard let currentSession = state else {
                 return state
             }
-            let newCountdown = currentSession.countDown < 1 ? 0 : currentSession.countDown - 1
-            return currentSession.copyWith(countDown: newCountdown)
+            let newDuration = currentSession.duration < 1 ? 0 : currentSession.duration - 1
+            return currentSession.copyWith(duration: newDuration)
         default:
             return state
         }

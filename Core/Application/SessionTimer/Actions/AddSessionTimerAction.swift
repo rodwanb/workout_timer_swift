@@ -9,10 +9,20 @@ import Foundation
 
 public struct AddSessionTimerAction: Action {
     public let name: String
-    public let countDown: Int
+    public let steps: [AddSessionTimerStep]
 
-    public init(name: String, countDown: Int) {
+    public init(name: String, steps: [AddSessionTimerStep]) {
         self.name = name
-        self.countDown = countDown
+        self.steps = steps
+    }
+}
+
+public struct AddSessionTimerStep {
+    public let name: String
+    public let duration: Int
+    
+    public init(name: String, duration: Int) {
+        self.name = name
+        self.duration = duration
     }
 }

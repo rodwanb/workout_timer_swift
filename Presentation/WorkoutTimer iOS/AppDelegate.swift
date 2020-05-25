@@ -11,7 +11,8 @@ import Application
 var store: Store? = nil
 var loggerMiddleware: LoggerMiddleware? = nil
 var timerMiddleware: TimerMiddleware? = nil
-var sessionTimerMiddleware: SessionTimerMiddleware? = nil
+var sessionTimerMiddleware: SessionTimerTickMiddleware? = nil
+var restartSessionTimerMiddleware: RestartSessionSessionMiddleware? = nil
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,15 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         store = Store()
         loggerMiddleware = LoggerMiddleware(store: store!)
         timerMiddleware = TimerMiddleware(store: store!)
-        sessionTimerMiddleware = SessionTimerMiddleware(store: store!)
-        
-//        store!.dispatch(AddTodoAction(name: "Publish Pod", description: "Release fxorders core to private repo"))
-//        store!.dispatch(AddTodoAction(name: "ssh to Https", description: "Update pods to use https instead of ssh for distribution"))
-        
-//        store!.dispatch(AddSessionTimerAction(name: "HIIT Timer", countDown: 5))
-//        store!.dispatch(SelectSessionTimerAction(sessionTimer: SessionTimerSelector.sessionTimers(store!.getState()).first!))
-//        store!.dispatch(StartTimerAction())
-        
+        sessionTimerMiddleware = SessionTimerTickMiddleware(store: store!)
+        restartSessionTimerMiddleware = RestartSessionSessionMiddleware(store: store!)
+                
         return true
     }
 

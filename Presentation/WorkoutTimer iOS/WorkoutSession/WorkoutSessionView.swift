@@ -17,7 +17,7 @@ struct WorkoutSessionView<ViewModel>: View where ViewModel: WorkoutSessionViewMo
     
     var body: some View {
         return VStack {
-            Text("Time: \(viewModel.remainingTime)")
+            Text("Timer: \(viewModel.sessionName) - \(viewModel.remainingTime)")
             
             Button(action: {
                 self.viewModel.startTimer()
@@ -46,6 +46,8 @@ struct WorkoutSessionView_Previews: PreviewProvider {
     }
     
     class PreviewWorkoutSessionViewModelImpl: WorkoutSessionViewModel {
+        var sessionName: String = "Preview"
+        
         var remainingTime: Int = 10
         
         func startTimer() {

@@ -10,22 +10,26 @@ import Foundation
 public struct SessionTimer {
     public let id: String
     public let name: String
-    public let countDown: Int
+    public let steps: [SessionStep]
     
-    public init(id: String, name: String, countDown: Int) {
+    public init(
+        id: String,
+        name: String,
+        steps: [SessionStep]) {
+        
         self.id = id
         self.name = name
-        self.countDown = countDown
+        self.steps = steps
     }
     
     public func copyWith(
         id: String? = nil,
         name: String? = nil,
-        countDown: Int? = nil) -> SessionTimer {
+        steps: [SessionStep]? = nil) -> SessionTimer {
         return SessionTimer(
             id: id ?? self.id,
             name: name ?? self.name,
-            countDown: countDown ?? self.countDown)
+            steps: steps ?? self.steps)
     }
 }
 
@@ -33,6 +37,6 @@ extension SessionTimer: Equatable {
     public static func == (lhs: SessionTimer, rhs: SessionTimer) -> Bool {
         return lhs.id == rhs.id &&
             lhs.name == rhs.name &&
-            lhs.countDown == rhs.countDown
+            lhs.steps == rhs.steps
     }
 }
