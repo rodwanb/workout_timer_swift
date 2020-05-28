@@ -25,7 +25,8 @@ class DefaultWorkoutSessionViewModel: BaseViewModel, WorkoutSessionViewModel {
         dispatch(AddSessionTimerAction(
             name: "MainTimer",
             steps: [
-                AddSessionTimerStep(name: "countdown", duration: 5)
+                AddSessionTimerStep(name: "countdown", duration: 5),
+                AddSessionTimerStep(name: "warmup", duration: 30)
             ]))
         let currentSession = SessionTimerSelector.sessionTimers(store!.getState()).first!
         dispatch(SelectSessionTimerAction(sessionTimer: currentSession))
@@ -34,7 +35,7 @@ class DefaultWorkoutSessionViewModel: BaseViewModel, WorkoutSessionViewModel {
     
     override func mapStateToProps(state: ApplicationState) {
         remainingTime = SessionTimerSelector.currentSessionStep(state)?.duration ?? 0
-        sessionName = SessionTimerSelector.currentSessionTimer(state)?.name ?? ""
+        sessionName = SessionTimerSelector.currentSessionStep(state)?.name ?? ""
     }
     
     func startTimer() {

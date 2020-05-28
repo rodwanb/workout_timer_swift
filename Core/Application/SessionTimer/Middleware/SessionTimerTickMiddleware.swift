@@ -27,7 +27,12 @@ public final class SessionTimerTickMiddleware {
                 
                 if let currentStep = SessionTimerSelector.currentSessionStep(self.store.getState()),
                     currentStep.duration == 0 {
-                    self.store.dispatch(StopTimerAction())
+                    if let currentSession = SessionTimerSelector.currentSessionTimer(self.store.getState()),
+                        let nextStep = currentSession.steps.first {
+                        self.store.dispatch(SelectSessionStepAction(sessionStep: nextStep))
+                    } else {
+                        self.store.dispatch(StopTimerAction())
+                    }
                 }
             })
             .disposed(by: disposeBag)

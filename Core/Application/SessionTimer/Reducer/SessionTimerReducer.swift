@@ -38,8 +38,12 @@ final class SessionTimerReducer {
     
     private static func reduceCurrentSessionTimer(_ state: SessionTimer?, action: Action) -> SessionTimer? {
         switch action {
-        case let selectAction as SelectSessionTimerAction:
-            return selectAction.sessionTimer
+        case let selectSessionAction as SelectSessionTimerAction:
+            return selectSessionAction.sessionTimer
+        case let selectStepAction as SelectSessionStepAction:
+            return state?.copyWith(steps: state?.steps.filter { step in
+                step != selectStepAction.sessionStep
+            })
         default:
             return state
         }
